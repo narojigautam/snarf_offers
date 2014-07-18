@@ -1,3 +1,5 @@
+# This module takes care of Http Request specific tasks
+
 module HttpRequester
   def get(url)
     response = HTTParty.get(URI.encode(url))

@@ -1,6 +1,8 @@
 require 'offer'
 
 module OffersParser
+
+  # this method parses a response from Offers API call into Offer objects
   def parse_into_objects res
     response = JSON.parse(res)
     offers_list = []
