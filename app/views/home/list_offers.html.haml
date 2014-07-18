@@ -1,0 +1,12 @@
+.row-fluid
+  .span3
+  .span6
+    = render "form"
+  .span3
+.row-fluid
+  - if @offers.any?
+    - @offers.each_with_index do |offer, i|
+      .span3.offer{:class => first_row_span_class(i)}
+        .title= offer.title
+        .payout= offer.payout
+        .thumbnail= image_tag offer.thumbnail

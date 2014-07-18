@@ -1,19 +1,5 @@
-.span3
-.span6
-  = form_tag query_offers_path, :class => 'form-horizontal' do
-    %legend Get Offers
-    .control-group
-      %label.control-label{ :for => :email } User ID
-      .controls
-        = text_field_tag "search_query[uid]", "", placeholder: "Unique id for the user"
-    .control-group
-      %label.control-label{ :for => :email } Custom Field
-      .controls
-        = text_field_tag "search_query[pub0]", "", placeholder: "Custom field, for Campaigns etc."
-    .control-group
-      %label.control-label{ :for => :email } Page
-      .controls
-        = text_field_tag "search_query[page]", "", placeholder: "Page number to query for"
-    .control-group
-      .controls
-        %button.btn{ type: :submit } Submit
+.row-fluid
+  .span3
+  .span6
+    = render "form"
+  .span3

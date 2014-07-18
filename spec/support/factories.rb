@@ -9,11 +9,11 @@ module Factories
   end
 
   def sample_json_response
-    '{"offers":[{"title":"Snarf","payout":"whats that","thumbnail":"url_to_thumbnail"}]}'
+    '{"offers":[{"title":"Dalia Research-Your Opinion Counts","offer_id":294680,"teaser":"Answer the questions and receive your reward.","required_actions":"Answer the questions and receive your reward.","link":"http://api.sponsorpay.com/27c006835820c32c796152eef09f2582/ceb32e3197259a0c/mobile/IN/157/offers/294680","offer_types":[{"offer_type_id":110,"readable":"Umfragen"},{"offer_type_id":112,"readable":"Gratis"}],"payout":8147,"time_to_payout":{"amount":1800,"readable":"30 Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/assets/14986/Survey1_square_60.jpg","hires":"http://cdn2.sponsorpay.com/assets/14986/Survey1_square_175.jpg"},"store_id":""}]}'
   end
 
   def sample_parser_expectation
-    {title: "Snarf", payout: "whats that", thumbnail: "url_to_thumbnail"}
+    {title: "Dalia Research-Your Opinion Counts", payout: "8147", thumbnail: "http://cdn2.sponsorpay.com/assets/14986/Survey1_square_60.jpg"}
   end
 end
 

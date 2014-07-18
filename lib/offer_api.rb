@@ -29,7 +29,7 @@ class OfferApi
   end
 
   attribute :format, String, default: :json
-  attribute :appid, Integer
+  attribute :appid, Integer, default: 157
   attribute :uid, String
   attribute :locale, String, default: :de
   attribute :os_version, Float, default: 6.0
@@ -42,8 +42,7 @@ class OfferApi
 
   validates_presence_of :format, :appid, :uid, :locale, :os_version
 
-  def find(page = 1)
-    @page = page
+  def find
     timestamp = DateTime.now.to_i
     offers_response = get(offers_url)
     parse_into_objects offers_response
