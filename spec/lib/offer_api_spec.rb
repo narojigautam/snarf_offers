@@ -1,10 +1,10 @@
 require "rails_helper"
-require "offer"
+require "offer_api"
 
-RSpec.describe Offer, :type => :class do
+RSpec.describe OfferApi, :type => :class do
 
   context "#valid?" do
-    let(:offers) { Offer.new }
+    let(:offers) { OfferApi.new }
     let(:params) { {format: :test, appid: 111, uid: :test, locale: :test,
       os_version: 6.0} }
 
@@ -29,11 +29,11 @@ RSpec.describe Offer, :type => :class do
   end
 
   context "#offers_url" do
-    let(:offers)      { Offer.new(appid: 123) }
+    let(:offers)      { OfferApi.new(appid: 123) }
     let(:expectation) { "http://api.sponsorpay.com/feed/v1/offers.json?format=json&appid=123&locale=de&os_version=6.0&page=1&timestamp=1405681698&hashkey=snarf-key" }
 
     before do
-      Offer.any_instance.stub(:get_hashkey).and_return("snarf-key")
+      OfferApi.any_instance.stub(:get_hashkey).and_return("snarf-key")
       offers.timestamp = 1405681698
     end
 
@@ -43,11 +43,11 @@ RSpec.describe Offer, :type => :class do
   end
 
   context "#req_attributes" do
-    let(:offers) { Offer.new(appid: 123, locale: :en, uid: '233') }
+    let(:offers) { OfferApi.new(appid: 123, locale: :en, uid: '233') }
     let(:attr_expectation) { "format=json&appid=123&uid=233&locale=en&os_version=6.0&page=1&timestamp=1405681773" }
 
     before do
-      Offer.any_instance.stub(:get_hashkey).and_return("snarf-key")
+      OfferApi.any_instance.stub(:get_hashkey).and_return("snarf-key")
       offers.timestamp = 1405681773
     end
 
@@ -57,7 +57,7 @@ RSpec.describe Offer, :type => :class do
   end
 
   context "#sorted_api_encoded_attributes_string" do
-    let(:offers) { Offer.new(appid: 123) }
+    let(:offers) { OfferApi.new(appid: 123) }
 
     it "returns an api key encoded url" do
       offers.base_url = 'http://www.snarf.com'

@@ -1,7 +1,7 @@
 require 'http_requester'
 require 'hashkey_generator'
 
-class Offer
+class OfferApi
   include HttpRequester
   include HashkeyGenerator
   include ActiveModel::Validations
