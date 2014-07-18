@@ -54,7 +54,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"code":"NO_CONTENT","message":"Successful request, but no offers are
         currently available for this user.","count":0,"pages":0,"information":{"app_name":"Demo
-        iframe for publisher - do not touch","appid":157,"virtual_currency":"Coins","country":"DE","language":"DE","support_url":"http://api.sponsorpay.com/support?appid=157&feed=on&mobile=on&uid=snarfinator"},"offers":[]}'
-    http_version: 
+        iframe for publisher - do not touch","appid":157,"virtual_currency":"Coins","country":"DE","language":"DE","support_url":"http://api.sponsorpay.com/support?appid=157&feed=on&mobile=on&uid=snarfinator"},"offers":[{"title":"Snarf","payout":"whats that","thumbnail":"url_to_thumbnail"}]}'
+    http_version:
   recorded_at: Fri, 18 Jul 2014 11:42:54 GMT
 recorded_with: VCR 2.8.0

@@ -21,9 +21,8 @@ RSpec.describe OfferApi, :type => :class do
     it "returns a list of offers" do
       offers.timestamp = 1405683773
       VCR.use_cassette('offers_list') do
-        response = JSON.parse(offers.find())
-        res_mesg = response['message']
-        expect(res_mesg).to eq "Successful request, but no offers are currently available for this user."
+        offers_res = offers.find
+        expect(offers_res).to_not be_empty
       end
     end
   end

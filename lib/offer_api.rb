@@ -1,9 +1,11 @@
 require 'http_requester'
 require 'hashkey_generator'
+require 'offers_parser'
 
 class OfferApi
   include HttpRequester
   include HashkeyGenerator
+  include OffersParser
   include ActiveModel::Validations
   include Virtus.model
 
@@ -44,6 +46,7 @@ class OfferApi
     @page = page
     timestamp = DateTime.now.to_i
     offers_response = get(offers_url)
+    parse_into_objects offers_response
   end
 
   def offers_url
