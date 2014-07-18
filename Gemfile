@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'haml-rails'
 gem 'virtus'
+gem 'httparty'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -41,6 +42,10 @@ group :test do
   gem 'guard-rspec'
   gem 'vcr'
   gem 'webmock'
+end
+
+group :development do
+  gem 'pry'
 end
 
 # Use ActiveModel has_secure_password

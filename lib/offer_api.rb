@@ -1,6 +1,7 @@
 require 'http_requester'
 require 'hashkey_generator'
 require 'offers_parser'
+require 'errors'
 
 class OfferApi
   include HttpRequester
@@ -8,6 +9,7 @@ class OfferApi
   include OffersParser
   include ActiveModel::Validations
   include Virtus.model
+  include Errors
 
   attr_accessor :base_url
   @@base_url = "http://api.sponsorpay.com"
@@ -45,7 +47,10 @@ class OfferApi
   def find
     timestamp = DateTime.now.to_i
     offers_response = get(offers_url)
-    parse_into_objects offers_response
+    if Rails.env != "test" and !request_correctly_signed?(offers_response[:response_sign], offers_response[:response_body])
+      raise WrongSignatureException
+    end
+    parse_into_objects offers_response[:response_body]
   end
 
   def offers_url
@@ -67,5 +72,9 @@ class OfferApi
 
   def time_stamped_attributes
     attributes.merge(timestamp: timestamp)
+  end
+
+  def request_correctly_signed? response_sign, response_body
+    generate_hashkey_for(response_body + api_key) == response_sign
   end
 end

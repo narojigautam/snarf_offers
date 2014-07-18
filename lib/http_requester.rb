@@ -1,7 +1,8 @@
-require 'net/http'
-
 module HttpRequester
   def get(url)
-    result = Net::HTTP.get(URI.parse(url))
+    response = HTTParty.get(URI.parse(url))
+    response_header = response.header
+    response_sign = response.headers['x-sponsorpay-response-signature']
+    { response_sign: response_sign, response_body: response.body }
   end
 end

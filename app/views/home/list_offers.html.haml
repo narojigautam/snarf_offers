@@ -10,3 +10,6 @@
         .title= offer.title
         .payout= offer.payout
         .thumbnail= image_tag offer.thumbnail
+  - else
+    .no_offers.text-center
+      %h3 No offers

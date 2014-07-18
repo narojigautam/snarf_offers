@@ -20,7 +20,7 @@ RSpec.describe OfferApi, :type => :class do
 
     it "returns a list of offers" do
       offers.timestamp = 1405683773
-      VCR.use_cassette('offers_list') do
+      VCR.use_cassette('offers_list2') do
         offers_res = offers.find
         expect(offers_res).to_not be_empty
       end
