@@ -1,3 +1,4 @@
 == SnarfOffers
 
 This is a test app to consume an api that presents offers one can avail on various sites.
+Hosted on Heroku at http://snarf-offers.herokuapp.com/
