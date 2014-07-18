@@ -1,5 +1,10 @@
 language: ruby
 rvm:
-  - "2.0.0"
-  - "1.9.3"
+- 2.0.0
+- 1.9.3
 script: bundle exec rspec spec
+deploy:
+  provider: heroku
+  app: snarf-offers
+  api_key:
+    secure: IvjG9LvFL61kBS1yS2OKSYNpk0jLLPvyLs/QBSGksBynRLEBtrpVk5HtK5Gp7A6r6rxu3VKhNeBGk8/CXFd3OdVoDc97J3pOt3fCV9iNWyRtc1uG66fVpOaKAsoI5/vPrDaMK73ZzXR+pyUVRHBc3zRyVg/uay9JCYetrol/aww=
