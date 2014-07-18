@@ -1,15 +1,15 @@
-= form_tag query_offers_path, :method => :post, :class => 'form-horizontal' do
+= form_tag query_offers_path, :method => :post, :class => 'form-horizontal', :id => "query-form" do
   %legend Get Offers
   .control-group
-    %label.control-label{ :for => :email } User ID
+    %label.control-label{ :for => 'offer_api[uid]' } User ID
     .controls
       = text_field_tag "offer_api[uid]", "", placeholder: "Unique id for the user"
   .control-group
-    %label.control-label{ :for => :email } Custom Field
+    %label.control-label{ :for => 'offer_api[pub0]' } Custom Field
     .controls
       = text_field_tag "offer_api[pub0]", "", placeholder: "Custom field, for Campaigns etc."
   .control-group
-    %label.control-label{ :for => :email } Page
+    %label.control-label{ :for => 'offer_api[page]' } Page
     .controls
       = number_field_tag "offer_api[page]", "", placeholder: "Page number to query for"
   .control-group

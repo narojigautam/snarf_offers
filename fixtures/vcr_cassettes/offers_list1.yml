@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.sponsorpay.com/feed/v1/offers.json?appid=157&format=json&hashkey=e7aaff35bc1405e7d50e79cb3fd50a4a015263e0&locale=de&os_version=6.0&page=1&pub0=Test%20Campaign&timestamp=1405695485&uid=Snarf%20Me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      P3p:
+      - CP="NON DSP COR CURa IVAa IVDa CONa OUR NOR STA"
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      X-Sponsorpay-Response-Signature:
+      - 8d88798252dacece39d34d025805e62c6ac2a198
+      X-Sponsorpay-Response-Code:
+      - OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"24c92f9d2355b9e1eee61ed3f3184270"'
+      X-Runtime:
+      - '0.558279'
+      Date:
+      - Fri, 18 Jul 2014 15:02:38 GMT
+      X-Rack-Cache:
+      - miss
+      X-Powered-By:
+      - Phusion Passenger 4.0.14
+      Server:
+      - nginx + Phusion Passenger 4.0.14
+    body:
+      encoding: UTF-8
+      string: '{"code":"OK","message":"Ok","count":30,"pages":2,"information":{"app_name":"Demo
+        iframe for publisher - do not touch","appid":157,"virtual_currency":"Coins","country":"IN","language":"DE","support_url":"http://api.sponsorpay.com/support?appid=157&feed=on&mobile=on&uid=Snarf+Me"},"offers":[{"title":"Candy
+        Slide","offer_id":287747,"teaser":"Lade die App herunter und ERSTELLE einen
+        Account","required_actions":"Lade die App herunter und ERSTELLE einen Account","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/22c5f977d2eef9bf/mobile/IN/157/offers/287747","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":106,"readable":"Spiele"},{"offer_type_id":109,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":482,"time_to_payout":{"amount":600,"readable":"10
+        Minuten"},"thumbnail":{"lowres":"http://cdn3.sponsorpay.com/app_icons/20465/small_mobile_icon.png","hires":"http://cdn3.sponsorpay.com/app_icons/20465/big_mobile_icon.png"},"store_id":""},{"title":"Nose
+        Doctor X: Booger Mania","offer_id":293609,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/ad93529aff080146/mobile/IN/157/offers/293609","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":106,"readable":"Spiele"},{"offer_type_id":109,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":33222,"time_to_payout":{"amount":1800,"readable":"30
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/21617/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/21617/big_mobile_icon.png"},"store_id":"885793325"},{"title":"Mega
+        Hit it Rich! Slots-Free Casino","offer_id":292250,"teaser":"Lade die App herunter
+        und ERSTELLE einen Account","required_actions":"Lade die App herunter und
+        ERSTELLE einen Account","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/85899893b44c81a1/mobile/IN/157/offers/292250","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":106,"readable":"Spiele"},{"offer_type_id":107,"readable":"Spiele"},{"offer_type_id":109,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":482,"time_to_payout":{"amount":300,"readable":"5
+        Minuten"},"thumbnail":{"lowres":"http://cdn1.sponsorpay.com/assets/44882/Screen_Shot_2014-07-15_at_3.34.48_PM_square_60.png","hires":"http://cdn1.sponsorpay.com/assets/44882/Screen_Shot_2014-07-15_at_3.34.48_PM_square_175.png"},"store_id":""},{"title":"Expedia","offer_id":294728,"teaser":"Herunterladen
+        und STARTEN","required_actions":"Herunterladen und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/9175cc7fc3152c16/mobile/IN/157/offers/294728","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":48450,"time_to_payout":{"amount":1800,"readable":"30
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/assets/9068/Expedia_square_60.png","hires":"http://cdn2.sponsorpay.com/assets/9068/Expedia_square_175.png"},"store_id":""},{"title":"Tata
+        Revotron Challenge","offer_id":292826,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/3c3fd1b40f82299d/mobile/IN/157/offers/292826","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":106,"readable":"Spiele"},{"offer_type_id":109,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":9634,"time_to_payout":{"amount":600,"readable":"10
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/21392/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/21392/big_mobile_icon.png"},"store_id":"com.TATA.revotron"},{"title":"Easy
+        Battery Saver Pro","offer_id":293195,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/4e99985f6dbbda95/mobile/IN/157/offers/293195","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":13012,"time_to_payout":{"amount":600,"readable":"10
+        Minuten"},"thumbnail":{"lowres":"http://cdn1.sponsorpay.com/app_icons/21605/small_mobile_icon.png","hires":"http://cdn1.sponsorpay.com/app_icons/21605/big_mobile_icon.png"},"store_id":"com.easy.battery.doctor"},{"title":"Mobogenie
+        Market","offer_id":284972,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/200f1f6123908be2/mobile/IN/157/offers/284972","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":9152,"time_to_payout":{"amount":2700,"readable":"einer
+        Stunde"},"thumbnail":{"lowres":"http://cdn4.sponsorpay.com/app_icons/7762/small_mobile_icon.png","hires":"http://cdn4.sponsorpay.com/app_icons/7762/big_mobile_icon.png"},"store_id":"com.mobogenie.markets"},{"title":"Wego
+        Flights & Hotels","offer_id":290768,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/100c68d732303ab8/mobile/IN/157/offers/290768","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":19267,"time_to_payout":{"amount":2100,"readable":"35
+        Minuten"},"thumbnail":{"lowres":"http://cdn3.sponsorpay.com/app_icons/20249/small_mobile_icon.png","hires":"http://cdn3.sponsorpay.com/app_icons/20249/big_mobile_icon.png"},"store_id":"751096907"},{"title":"Opera
+        Coast web browser","offer_id":294692,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/cb3a46fd8c262887/mobile/IN/157/offers/294692","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":32575,"time_to_payout":{"amount":1800,"readable":"30
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/6929/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/6929/big_mobile_icon.png"},"store_id":"674024845"},{"title":"Jabong","offer_id":288293,"teaser":"Herunterladen
+        und STARTEN","required_actions":"Herunterladen und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/68b10635e0d6a9d6/mobile/IN/157/offers/288293","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":11560,"time_to_payout":{"amount":6600,"readable":"2
+        Stunden"},"thumbnail":{"lowres":"http://cdn3.sponsorpay.com/app_icons/17575/small_mobile_icon.png","hires":"http://cdn3.sponsorpay.com/app_icons/17575/big_mobile_icon.png"},"store_id":"com.jabong.android"},{"title":"\u4e09Q\u6f14\u7fa9","offer_id":283763,"teaser":"Sieh
+        dir den Trailer bis zum Ende an.","required_actions":"Sieh dir den Trailer
+        bis zum Ende an.","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/4782c4d9655d41ae/mobile/IN/157/offers/283763","offer_types":[{"offer_type_id":112,"readable":"Gratis"},{"offer_type_id":113,"readable":"Video"}],"payout":592,"time_to_payout":{"amount":0,"readable":"einer
+        Minute"},"thumbnail":{"lowres":"http://cdn1.sponsorpay.com/app_icons/20750/small_mobile_icon.png","hires":"http://cdn1.sponsorpay.com/app_icons/20750/big_mobile_icon.png"},"store_id":"882416793"},{"title":"Bubble
+        Mania\u2122","offer_id":144870,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/9e91b8f1422862d0/mobile/IN/157/offers/144870","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":106,"readable":"Spiele"},{"offer_type_id":109,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":2601,"time_to_payout":{"amount":4800,"readable":"einer
+        Stunde"},"thumbnail":{"lowres":"http://cdn4.sponsorpay.com/app_icons/1456/small_mobile_icon.png","hires":"http://cdn4.sponsorpay.com/app_icons/1456/big_mobile_icon.png"},"store_id":"com.teamlava.bubble"},{"title":"Fashion
+        Story\u2122","offer_id":78484,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/83fed1650e2adabe/mobile/IN/157/offers/78484","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":106,"readable":"Spiele"},{"offer_type_id":109,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":2973,"time_to_payout":{"amount":3600,"readable":"einer
+        Stunde"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/117/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/117/big_mobile_icon.png"},"store_id":"com.teamlava.fashionstory"},{"title":"Snapdeal
+        Mobile Shopping","offer_id":234871,"teaser":"Download and start","required_actions":"Download
+        and start","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/69299c6feb77d50c/mobile/IN/157/offers/234871","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":20595,"time_to_payout":{"amount":600,"readable":"10
+        Minuten"},"thumbnail":{"lowres":"http://cdn1.sponsorpay.com/app_icons/10475/small_mobile_icon.png","hires":"http://cdn1.sponsorpay.com/app_icons/10475/big_mobile_icon.png"},"store_id":""},{"title":"Amazon","offer_id":217349,"teaser":"Download
+        and install","required_actions":"Download and install","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/f9b5a5343c5b68fd/mobile/IN/157/offers/217349","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":4817,"time_to_payout":{"amount":1200,"readable":"20
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/assets/5460/amazon_square_60.PNG","hires":"http://cdn2.sponsorpay.com/assets/5460/amazon_square_175.PNG"},"store_id":""},{"title":"Talktime
+        Candy","offer_id":256999,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/4289da353877a58c/mobile/IN/157/offers/256999","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":7225,"time_to_payout":{"amount":5700,"readable":"2
+        Stunden"},"thumbnail":{"lowres":"http://cdn1.sponsorpay.com/app_icons/18451/small_mobile_icon.png","hires":"http://cdn1.sponsorpay.com/app_icons/18451/big_mobile_icon.png"},"store_id":"com.stratoshear.candyapps"},{"title":"MakeMyTrip,
+        Flights Hotels Bus","offer_id":239302,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/070f901bd551361a/mobile/IN/157/offers/239302","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":7707,"time_to_payout":{"amount":2400,"readable":"40
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/8020/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/8020/big_mobile_icon.png"},"store_id":"com.makemytrip"},{"title":"99
+        Acres","offer_id":247351,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/8bc048ac097c5425/mobile/IN/157/offers/247351","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":12475,"time_to_payout":{"amount":300,"readable":"5
+        Minuten"},"thumbnail":{"lowres":"http://cdn4.sponsorpay.com/assets/42635/99acres_square_60.jpg","hires":"http://cdn4.sponsorpay.com/assets/42635/99acres_square_175.jpg"},"store_id":""},{"title":"Jewel
+        Mania\u2122","offer_id":186221,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/c5ee98edd7d70810/mobile/IN/157/offers/186221","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":106,"readable":"Spiele"},{"offer_type_id":109,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":2601,"time_to_payout":{"amount":3600,"readable":"einer
+        Stunde"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/9731/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/9731/big_mobile_icon.png"},"store_id":"com.teamlava.jewel"},{"title":"Hotels.com
+        HD \u2013 Hotel Booking and l","offer_id":250078,"teaser":"Herunterladen und
+        STARTEN","required_actions":"Herunterladen und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/a6d7660dbce17e95/mobile/IN/157/offers/250078","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":51133,"time_to_payout":{"amount":600,"readable":"10
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/620/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/620/big_mobile_icon.png"},"store_id":"461327349"},{"title":"Top-rated
+        Slot Machine!","offer_id":267440,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/25a80567aa521781/mobile/IN/157/offers/267440","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":107,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":434,"time_to_payout":{"amount":600,"readable":"10
+        Minuten"},"thumbnail":{"lowres":"http://cdn1.sponsorpay.com/assets/44166/Mega_Slots_vegas_175_175_square_60.gif","hires":"http://cdn1.sponsorpay.com/assets/44166/Mega_Slots_vegas_175_175_square_175.gif"},"store_id":""},{"title":"Hotels.com
+        \u2013 Hotel Booking and last","offer_id":263011,"teaser":"Herunterladen und
+        STARTEN","required_actions":"Herunterladen und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/8e8d5deb1cbecfe4/mobile/IN/157/offers/263011","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":43833,"time_to_payout":{"amount":0,"readable":"einer
+        Minute"},"thumbnail":{"lowres":"http://cdn1.sponsorpay.com/app_icons/582/small_mobile_icon.png","hires":"http://cdn1.sponsorpay.com/app_icons/582/big_mobile_icon.png"},"store_id":"284971959"},{"title":"Mobile
+        Recharge and Bill Pay","offer_id":275546,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/2f0e59ffa4a96c39/mobile/IN/157/offers/275546","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":11560,"time_to_payout":{"amount":0,"readable":"einer
+        Minute"},"thumbnail":{"lowres":"http://cdn4.sponsorpay.com/app_icons/12472/small_mobile_icon.png","hires":"http://cdn4.sponsorpay.com/app_icons/12472/big_mobile_icon.png"},"store_id":"com.mobikwik_new"},{"title":"Snapdeal
+        Mobile Shopping","offer_id":238576,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/eb60eedc5b4ee8c9/mobile/IN/157/offers/238576","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":19267,"time_to_payout":{"amount":300,"readable":"5
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/12976/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/12976/big_mobile_icon.png"},"store_id":"721124909"},{"title":"BookMyShow\u2013Movie
+        Tickets,Plays","offer_id":270794,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/f0d7b9dd52f8b4d2/mobile/IN/157/offers/270794","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":9634,"time_to_payout":{"amount":114900,"readable":"einem
+        Tag"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/16744/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/16744/big_mobile_icon.png"},"store_id":"com.bt.bms"},{"title":"Slots\u2122","offer_id":123191,"teaser":"Herunterladen
+        und STARTEN","required_actions":"Herunterladen und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/823f9991affddc82/mobile/IN/157/offers/123191","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":106,"readable":"Spiele"},{"offer_type_id":107,"readable":"Spiele"},{"offer_type_id":109,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":2973,"time_to_payout":{"amount":2100,"readable":"35
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/2068/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/2068/big_mobile_icon.png"},"store_id":"com.sharkparty.slots"},{"title":"Book
+        My Show","offer_id":265608,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/34f448aae43286fc/mobile/IN/157/offers/265608/preview","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":15393,"time_to_payout":{"amount":1800,"readable":"30
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/16744/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/16744/big_mobile_icon.png"},"store_id":""},{"title":"DataDiary","offer_id":133064,"teaser":"Herunterladen
+        und STARTEN","required_actions":"Herunterladen und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/b0695fba1e57786b/mobile/IN/157/offers/133064","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":48168,"time_to_payout":{"amount":4500,"readable":"einer
+        Stunde"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/6028/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/6028/big_mobile_icon.png"},"store_id":"635261623"},{"title":"Castle
+        Clash","offer_id":158447,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/9003bee5e4e00c3b/mobile/IN/157/offers/158447","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":106,"readable":"Spiele"},{"offer_type_id":109,"readable":"Spiele"},{"offer_type_id":112,"readable":"Gratis"}],"payout":9062,"time_to_payout":{"amount":3600,"readable":"einer
+        Stunde"},"thumbnail":{"lowres":"http://cdn3.sponsorpay.com/app_icons/6078/small_mobile_icon.png","hires":"http://cdn3.sponsorpay.com/app_icons/6078/big_mobile_icon.png"},"store_id":"com.igg.castleclash"},{"title":"Quikr
+        Free Classifieds","offer_id":261826,"teaser":"Herunterladen und STARTEN","required_actions":"Herunterladen
+        und STARTEN","link":"http://api.sponsorpay.com/5ba289aa8a18497b08e0ae0f74bad8a9/eb01b38f426910fa/mobile/IN/157/offers/261826","offer_types":[{"offer_type_id":101,"readable":"Download"},{"offer_type_id":112,"readable":"Gratis"}],"payout":12042,"time_to_payout":{"amount":1800,"readable":"30
+        Minuten"},"thumbnail":{"lowres":"http://cdn2.sponsorpay.com/app_icons/5276/small_mobile_icon.png","hires":"http://cdn2.sponsorpay.com/app_icons/5276/big_mobile_icon.png"},"store_id":"com.quikr"}]}'
+    http_version: 
+  recorded_at: Fri, 18 Jul 2014 15:02:38 GMT
+recorded_with: VCR 2.8.0

@@ -42,6 +42,7 @@ group :test do
   gem 'guard-rspec'
   gem 'vcr'
   gem 'webmock'
+  gem "capybara"
 end
 
 group :development do

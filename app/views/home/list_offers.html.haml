@@ -5,6 +5,7 @@
   .span3
 .row-fluid
   - if @offers.any?
+    %h3= "Listing #{@offers.count} Offers"
     - @offers.each_with_index do |offer, i|
       .span3.offer{:class => first_row_span_class(i)}
         .title= offer.title
