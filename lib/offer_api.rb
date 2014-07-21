@@ -12,7 +12,6 @@ class OfferApi
   include Virtus.model
   include Errors
 
-  attr_accessor :base_url
   @@base_url = "http://api.sponsorpay.com"
 
   def timestamp

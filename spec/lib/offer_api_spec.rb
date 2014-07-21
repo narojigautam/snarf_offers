@@ -59,11 +59,19 @@ RSpec.describe OfferApi, :type => :class do
     let(:offers) { OfferApi.new(appid: 123) }
 
     it "returns an api key encoded url" do
-      offers.base_url = 'http://www.snarf.com'
       offers.api_key = '1234'
       offers.timestamp = 1405681972
       expectation = 'appid=123&format=json&locale=de&os_version=6.0&page=1&timestamp=1405681972&1234'
       expect(offers.sorted_api_encoded_attributes_string).to eq expectation
+    end
+  end
+
+  context "#time_stamped_attributes" do
+    let(:offers) { OfferApi.new(appid: 123) }
+
+    it "returns attributes of OffersAPI object hash mixed with timestamp" do
+      expect(offers.attributes).to_not include :timestamp
+      expect(offers.time_stamped_attributes.keys).to include :timestamp
     end
   end
 end
