@@ -15,6 +15,10 @@ module Factories
   def sample_parser_expectation
     {title: "Dalia Research-Your Opinion Counts", payout: "8147", thumbnail: "http://cdn2.sponsorpay.com/assets/14986/Survey1_square_60.jpg"}
   end
+
+  def invalid_page_json_response
+    {"code" => "ERROR_INVALID_PAGE"}
+  end
 end
 
 RSpec.configure do |c|

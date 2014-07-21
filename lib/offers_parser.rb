@@ -1,4 +1,5 @@
 require 'offer'
+require 'errors'
 
 module OffersParser
 
@@ -6,7 +7,7 @@ module OffersParser
   def parse_into_objects res
     response = JSON.parse(res)
     offers_list = []
-    response["offers"].each do |offer|
+    parse_response_code(response) and response["offers"].each do |offer|
       offers_list << Offer.new(form_offer_hash(offer))
     end
     offers_list
@@ -18,5 +19,14 @@ module OffersParser
       payout: offer['payout'],
       thumbnail: offer['thumbnail']['lowres']
     }
+  end
+
+  def parse_response_code(response)
+    case response["code"]
+    when "ERROR_INVALID_PAGE"
+      raise Errors::InvalidPageException
+    else
+      true
+    end
   end
 end
