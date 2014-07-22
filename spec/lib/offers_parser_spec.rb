@@ -18,7 +18,8 @@ RSpec.describe OffersParser, :type => :module do
     let(:response) { invalid_page_json_response }
 
     it "raises InvalidPageException if entered page number is not valid" do
-      expect { parser_class.parse_response_code(invalid_page_json_response) }.to raise_error Errors::InvalidPageException
+      expect(Rails.logger).to receive(:error).with(Errors::InvalidPageException)
+      parser_class.parse_response_code(invalid_page_json_response)
     end
   end
 end

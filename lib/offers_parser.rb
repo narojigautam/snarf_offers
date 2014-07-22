@@ -7,7 +7,8 @@ module OffersParser
   def parse_into_objects res
     response = JSON.parse(res)
     offers_list = []
-    parse_response_code(response) and response["offers"].each do |offer|
+    parse_response_code(response)
+    response["offers"].present? and response["offers"].each do |offer|
       offers_list << Offer.new(form_offer_hash(offer))
     end
     offers_list
@@ -24,7 +25,8 @@ module OffersParser
   def parse_response_code(response)
     case response["code"]
     when "ERROR_INVALID_PAGE"
-      raise Errors::InvalidPageException
+      Rails.logger.error Errors::InvalidPageException
+      true
     else
       true
     end
