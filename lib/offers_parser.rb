@@ -18,7 +18,10 @@ module OffersParser
     {
       title: offer['title'],
       payout: offer['payout'],
-      thumbnail: offer['thumbnail']['lowres']
+      thumbnail: offer['thumbnail']['lowres'],
+      image: offer['thumbnail']['hires'],
+      teaser: offer['teaser'],
+      time_to_payout: offer['time_to_payout']['readable']
     }
   end
 

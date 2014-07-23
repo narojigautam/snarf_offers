@@ -5,4 +5,7 @@ class Offer
   attribute :title, String
   attribute :payout, String
   attribute :thumbnail, String
+  attribute :image, String
+  attribute :teaser, String
+  attribute :time_to_payout, String
 end
