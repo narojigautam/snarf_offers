@@ -13,7 +13,7 @@ module Factories
   end
 
   def sample_parser_expectation
-    {title: "Dalia Research-Your Opinion Counts", payout: "8147", thumbnail: "http://cdn2.sponsorpay.com/assets/14986/Survey1_square_60.jpg"}
+    {title: "Dalia Research-Your Opinion Counts", payout: "8147", thumbnail: "http://cdn2.sponsorpay.com/assets/14986/Survey1_square_60.jpg", image: "http://cdn2.sponsorpay.com/assets/14986/Survey1_square_175.jpg", time_to_payout: "30 Minuten", teaser: "Answer the questions and receive your reward."}
   end
 
   def invalid_page_json_response
